@@ -1,0 +1,66 @@
+[
+  {
+    "id": "_pb_users_auth_",
+    "name": "users",
+    "type": "auth",
+    "system": false,
+    "fields": [
+      {
+        "name": "avatar",
+        "type": "file",
+        "maxSelect": 1
+      },
+      {
+        "name": "created",
+        "type": "autodate",
+        "onCreate": true
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "system": true
+      },
+      {
+        "name": "emailVisibility",
+        "type": "bool",
+        "system": true
+      },
+      {
+        "name": "id",
+        "type": "text",
+        "required": true,
+        "system": true
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "password",
+        "type": "password",
+        "required": true,
+        "system": true,
+        "hidden": true
+      },
+      {
+        "name": "tokenKey",
+        "type": "text",
+        "required": true,
+        "system": true,
+        "hidden": true
+      },
+      {
+        "name": "updated",
+        "type": "autodate",
+        "onCreate": true,
+        "onUpdate": true
+      },
+      {
+        "name": "verified",
+        "type": "bool",
+        "system": true
+      }
+    ]
+  }
+]

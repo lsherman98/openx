@@ -1,0 +1,49 @@
+# Dependencies, build output, and caches
+node_modules/
+dist/
+dist-ssr/
+.tanstack/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# PocketBase runtime data and binaries
+pocketbase/pb_data/
+pocketbase/pocketbase
+pocketbase/server
+pocketbase/output/
+pocketbase/pb_public/*
+!pocketbase/pb_public/.gitkeep
+
+# Private deployment configuration and generated files
+deploy/config.json
+deploy/generated/
+deploy/*.env
+deploy/observability/
+
+# Generated route tree (recreated by Vite)
+src/routeTree.gen.ts

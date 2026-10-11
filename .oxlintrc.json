@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "react"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "error",
+    "typescript/no-explicit-any": "error"
+  },
+  "options": {
+    "maxWarnings": 0
+  },
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.{js,mjs,cjs,ts}", "*.config.{js,mjs,cjs,ts}"],
+      "env": {
+        "browser": false,
+        "node": true
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules/**",
+    "dist/**",
+    "dist-ssr/**",
+    "pocketbase/pb_public/**",
+    "pocketbase/pb_data/**",
+    "deploy/generated/**",
+    "src/routeTree.gen.ts",
+    "src/lib/pocketbase-types.ts"
+  ]
+}
