@@ -5,7 +5,7 @@ go 1.27.0
 require (
 	github.com/getsentry/sentry-go v0.50.0
 	github.com/joho/godotenv v1.5.1
-	github.com/pocketbase/pocketbase v0.40.5
+	github.com/pocketbase/pocketbase v0.40.6
 	github.com/spf13/cobra v1.10.2
 	modernc.org/sqlite v1.60.1
 )
